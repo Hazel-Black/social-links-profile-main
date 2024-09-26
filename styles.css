@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+/*colors*/
+--text-color:white;
+--highlight-hover:hsl(75, 94%, 57%);
+--bg-color: hsl(0, 0%, 8%);
+--card-bg: hsl(0, 0%, 12%);
+--button-bg: hsl(0, 0%, 20%);
+/*Font settings*/
+--main-font: "Inter" ;
+}
+body{
+  font-family: var(--main-font);
+  text-align: center;
+  background-color: var(--bg-color);
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card-container{
+  background-color: var(--card-bg);
+  padding-block-start: 2em;
+  padding-block-end: 1.2em;
+  padding-inline: 1.5em;
+  border-radius: .5em;
+  
+}
+.hero-image{
+background-image: url(assets/images/avatar-jessica.jpeg);
+background-size: cover;
+margin: auto;
+width: 7em;
+height: 7em;
+border-radius: 5em;
+margin-bottom: 1.5em;
+}
+h1{
+  font-weight: 400;
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: .3em;
+}
+h2{
+  font-weight: 600;
+  color: var(--highlight-hover);
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+p{
+  color: var(--text-color);
+  font-size: .9rem;
+  margin-bottom: 1.5em;
+}
+.social-links{
+  display: flex;
+  flex-direction: column;
+}
+button{
+background-color: var(--button-bg);
+color: white;
+font-family: var(--main-font);
+border: none;
+margin-bottom: 1em;
+padding-block: 1.1em;
+font-weight: 700;
+border-radius: .5em;
+}
+button:hover{
+  background-color: var(--highlight-hover);
+  color: var(--card-bg) ;
+}
+.attribution {
+  font-size: .8rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+}
+.attribution a {
+  color: var(--highlight-hover);
+  text-decoration: none;
+
+}
